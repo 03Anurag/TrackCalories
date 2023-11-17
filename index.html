@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Track Calories</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                <h1>Track Calorie</h1>
+            </div>
+
+            <div class="modify-buttons">
+                <div class="set-limit modify">Set Daily Limit</div>
+                <div class="reset-button modify">Reset Day</div>
+            </div>
+        </nav>
+    </header>
+    
+    <form class="limit-inp">
+        <div class="text">
+            <p>Set daily limit</p>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="get-limit">
+            <p>Daily calorie limit</p>
+            <input type="number" name="" class="get-caloLimit">
+            <button type="submit" class="submit-limit">Save</button>
+        </div>
+    </form>
+
+
+    <section class="Data">
+        <div class="data">
+            <div class="calorie-limit">
+                <div class="limit">
+                    <!-- <h1>2000</h1>
+                    <h3>Daily Calorie Limit</h3> -->
+                </div>
+                <div class="gain-loss">
+                    <!-- <h1>400</h1>
+                    <h3>gain/loss</h3> -->
+                </div>
+            </div>
+
+
+
+            <div class="calorie-count">
+                <div class="calorie-data consumed">
+                    <!-- <h1>700</h1>
+                    <h3>Calories Consumed</h3> -->
+                </div>
+                <div class="calorie-data burned">
+                    <!-- <h1>200</h1>
+                    <h3>Calories Burned</h3> -->
+                </div>
+                <div class="calorie-data remaining">
+                    <!-- <h1>1500</h1>
+                    <h3>Calories Remaining</h3> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="bar">
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+    </section>
+
+
+
+
+    <section class="Entry">
+        <div class="Input-Data">
+            <div class="inputs meals">
+                <div class="food-items">
+                    <p>Meals/Food Items</p>
+                </div>
+
+                <form action="" class="meal-form" id="mealform">
+                    <input type="text" name="" id="" placeholder="Enter Meal" class="meal-inp">
+                    <input type="number" name="" id="" placeholder="Enter Calories" class="meal-calo">
+                    <button type="submit" class="meal-btn">Add Your Meal</button>
+                </form>
+
+                <!-- <div class="food">
+                    <p>BreakFast</p>
+                    <div class="food-count">250</div>
+                    <i class="fa-solid fa-x"></i>
+                </div> -->
+            </div>
+
+
+
+
+            <div class="inputs workouts">
+                <div class="workout-items">
+                    <p>Workouts</p>
+                </div>
+
+
+                <form action="" class="workout-form" id="workoutform">
+                    <input type="text" name="" id="" placeholder="Enter Workout" class="workout-inp">
+                    <input type="number" name="" id="" placeholder="Enter Calories" class="workout-calo">
+                    <button type="submit"  class="workout-btn">Add Your Workout</button>
+                </form>
+                <!-- 
+                <div class="workout">
+                    <p>Treadmil 1 hour</p>
+                    <div class="workout-count">100</div>
+                    <i class="fa-solid fa-x"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
